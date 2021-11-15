@@ -11,21 +11,21 @@ _Prueba de texto en Italic_
 ~Prueba de texto con tachado~
 
 ### PRUEBA MARCA
-    >Amazon
-    &copy;
+>Amazon
+&copy;
 
 ### PRUEBA HIPERVÍNCULOS
-    [Amazon](https://www.amazon.es "Amazon")
+[Amazon](https://www.amazon.es "Amazon")
 
 ### PRUEBA IMAGEN
-    ![Amazon](https://1000marcas.net/wp-content/uploads/2019/11/Amazon-logo-600x375.png)
+![Amazon](https://1000marcas.net/wp-content/uploads/2019/11/Amazon-logo-600x375.png)
 
 ### PRUEBA CÓDIGO
-    `printf()` Este texto es de prueba
+`printf()` Este texto es de prueba
 
 ### PRUEBA MESA
-    |Departamento|Producto|
-    |------------|------- |
-    |Alimentación|Cerveza |
-    |Electrónica |TV      |           
-    |Informática |CPU     |
+|Departamento|Producto|
+|------------|------- |
+|Alimentación|Cerveza |
+|Electrónica |TV      |           
+|Informática |CPU     |
