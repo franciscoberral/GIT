@@ -1,15 +1,14 @@
 # EJERCICIO PARA ENTORNOS DE DESARROLLO
 
 # PRUEBAS
-
 ## PRUEBA TEXTO
-    Prueba de texto simple
+Prueba de texto simple
 
-    _Prueba de texto en Italic_
+_Prueba de texto en Italic_
 
-    **Prueba de texto en negrita**
+**Prueba de texto en negrita**
 
-    ~Prueba de texto con tachado~
+~Prueba de texto con tachado~
 
 ### PRUEBA MARCA
     >Amazon
@@ -26,7 +25,7 @@
 
 ### PRUEBA MESA
     |Departamento|Producto|
-    |------------|--------|
+    |------------|------- |
     |Alimentación|Cerveza |
     |Electrónica |TV      |           
     |Informática |CPU     |
