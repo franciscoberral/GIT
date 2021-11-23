@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms.Ex1</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .margen{
+            margin-left: 20px;
+        }
+        .align{
+            vertical-align: top;
+        }
+        .font{
+            font-size: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        input[type='number']{
+            width: 35px;
+        }
+        input[name='special']{
+            width: 90px;
+        }
+        #tabla1{
+            border-collapse: collapse;
+        }
+        #tr{
+            border-bottom: 1px solid black;
+            border-top: 1px solid black
+        }
+        #borde{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabla1">
+        <tr>
+            <td>
+                <label for="title"><b>Title:</b>
+                    <span class="red">*</span>
+                </label><br>
+                <input type="text" name="text" value="Astronomy for Poets" size="42"/>
+            </td>
+            <td>
+                <label for="short title"><b>Short Title:</b>
+                    <span class="red">*</span>
+                </label><br>
+                <input type="text" name="text" value="Astr. for Poets" size="17"/>
+            </td>
+            <td>
+                <b>Subj.:</b><br>
+                <span class="font">BLST</span>
+            </td>
+            <td>
+                <label for="number"><b>Num:</b></label><br>
+                <input type="text" name="text" value="10" size="1"/>
+            </td>
+            <td>
+                <label for="section"><b>Section:</b></label><br>
+                <input type="text" name="text" value="01" size="1"/>
+            </td>
+            <td>
+                <b>Year:</b><br>
+                <span class="font">0910</span>
+            </td>
+        </tr>
+    </table>
+    <table id="tabla1">
+        <tr id="tr" style="background-color: ghostwhite;">
+            <td class="align" width="100px" style="padding: 5px 1px;">
+                <input type="checkbox" name="enrollment"/>Enrollment<br>
+                <span class="margen">limit</span>                                          
+            </td>
+            <td class="align" width="50px" style="padding: 5px 1px;">
+                <label for="Num">Num.:</label><br>
+                <input type="text" name="number" size="1"/>
+            </td>
+            <td class="align" width="380px" style="padding: 5px 1px;">
+                <label for="rationale:"><b>Rationale:</b></label><br>
+                <input type="text" name="text" size="48"/>
+            </td>
+            <td rowspan="4" class="align" width="145px" id="borde" style="padding: 5px 3px;">
+                <b>Class<br>
+                Meetings/Week:</b><br>
+                <input type="number" name="number" placeholder="1"/><br>
+                <b>Class Hours/Week:</b><br>
+                <input type="number" name="number" placeholder="0"/><br>
+                <b>Semester(s) Offered:</b><br>
+                <input type="number" name="special" placeholder="- None -"/><br>
+                <input type="checkbox" checked/>Incl. semester in<br>
+                <span class="margen">prereqs.</span><br>
+                <input type="checkbox"/>Offered only once<br>
+                <input type="checkbox"/>Incl. in printed<br>
+                <span class="margen">catalog</span>
+            </td>
+            <td rowspan="4" class="align" id="borde" style="padding: 5px 3px;">
+                <b>Keywords:</b><br>
+                <input type="checkbox"/>Science for non-majors<br>
+                <input type="checkbox"/>Fine arts for non-majors<br>
+                <input type="checkbox"/>Lab science course<br>
+                <input type="checkbox"/>Artistic practise<br>
+                <input type="checkbox"/>Foreign language/culture<br>
+                <span class="margen">taught in English</span><br>
+                <input type="checkbox"/>Community based learning<br>
+                <input type="checkbox"/>Writing attentive<br>
+                <input type="checkbox"/>Writing intensive
+            </td>
+        </tr>
+        <tr id="tr" style="background-color: lightgrey;">
+            <td class="align" style="padding: 5px 1px;">
+                <input type="checkbox" name="consent"/>Consent<br>
+                <span class="margen">required</span>
+            </td>
+            <td></td>
+            <td class="align" style="padding: 5px 1px;">
+                <label for="rationale:"><b>Rationale:</b></label><br>
+                <input type="text" name="text" size="48"/>
+            </td>
+        </tr>
+        <tr id="tr" style="background-color: ghostwhite;">
+            <td class="align" style="padding: 5px 1px;">
+                <input type="checkbox" name="limit"/>Limit class<br>
+                <span class="margen">level</span>
+            </td>
+            <td class="align" style="padding: 5px 1px;">
+                <label for="code:">Code:</label><br>
+                <input type="text" name="text" size="1"/>
+            </td>
+            <td class="align" style="padding: 5px 1px;">
+                <label for="rationale:"><b>Rationale:</b></label><br>
+                <input type="text" name="text" size="48"/><br>
+                <label for="over-enrollment:"><b>How to handle over-enrollment:</b></label><br>
+                <input type="text" name="text" size="48"/>
+            </td>
+        </tr>
+        <tr id="tr" style="background-color: lightgrey;">
+            <td class="align" style="padding: 5px 1px;">
+                <input type="checkbox" name="prerequisite"/>Prerequisite
+            </td>
+            <td></td>
+            <td class="align" style="padding: 5px 1px;">
+                <label for="rationale:"><b>Rationale:</b></label><br>
+                <input type="text" name="text" size="48"/><br>
+                <label for="required:"><b>Required Prereqs. (major, course):</b></label><br>
+                <input type="text" name="text" size="48"/><br>
+                <label for="recommended:"><b>Recommended Prereqs.:</b></label><br>
+                <input type="text" name="text" size="48"/>
+            </td>
+        </tr>
+    </table>
+    <table id="tabla1">
+        <tr>
+            <td>
+                <b>Approvals:</b>
+            </td>
+            <td>
+                <b>Date:</b>
+            </td>
+            <td>
+                <b>Comment:</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="CEP"/>CEP
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: ghostwhite;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: ghostwhite;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text" size="52"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="commite"/>Commite of Six
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: lightgrey;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: lightgrey;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text" size="52"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="faculty"/>Faculty
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: ghostwhite;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="tabla1">
+                    <tr id="tr" style="background-color: ghostwhite;">
+                        <td width="40px" align="center">
+                            <input type="image" id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cursor_Flecha_4.svg/768px-Cursor_Flecha_4.svg.png" style="width:15px">
+                        </td>
+                        <td>
+                            <input type="text" name="text" size="52"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

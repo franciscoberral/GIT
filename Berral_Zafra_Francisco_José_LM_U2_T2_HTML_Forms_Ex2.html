@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms.Ex2</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+        .estilo {border: 1px solid blue;
+                width: 875px;
+                height: 850px;
+                margin-left: 18%;
+        }
+        .texto {
+            width: 200px;
+            height: 100px;
+        }
+        .boton {
+                margin-left: 45%;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="estilo"> 
+          <table style="width: 875px;">
+            <tr>
+                <td style="background-color: aqua;" style="text-align: left;" colspan=4>
+                    <h3>Event Planner</h3>
+            </tr>
+            <tr>
+                <td>
+                    <b>Event Name</b>
+                </td>
+                <td>
+                    <input type="text" name="text" size="25">
+                </td>
+                <td>
+                    <b>Requirements</b>
+                </td>
+                <td>
+                    <input type="checkbox" name="staffing">Staffing<br>
+                    <input type="checkbox" name="catering">Catering<br>
+                    <input type="checkbox" name="security">Security
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <b>Event Coordinator</b>
+                </td>
+                <td>
+                    <input type="text" name="text" size="25">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <b>Email</b>
+                </td>
+                <td> 
+                    <input type="text" name="text" size="25">
+                </td>
+                <td>
+                    <b>Event Start Date</b>
+                </td>
+                <td> 
+                    <input type="date" name="date"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Event Type</b>
+                </td>
+                <td> 
+                    <select name="event" style="width: 218px;">
+                        <option>Concert</option>
+                    </select> 
+                </td>
+                <td> 
+                    <b>Event End Date</b>
+                </td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Total Members</b>
+                </td>
+                <td>
+                    <select name="members" style="width: 218px;">
+                        <option>-Select-</option>
+                    </select> 
+                </td>
+                <td>
+                    <b>Location</b>
+                </td>
+                <td>
+                    </select>
+                        <textarea class=texto size="100" name="text"></textarea>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Event Description</b>
+                </td>
+                <td>
+                    </select>
+                        <textarea class=texto height=200px width=200px size="100" name="mensaje"></textarea>
+                    </select>
+                </td>
+                <td>
+                    <b>City</b>
+                </td>
+                <td>
+                    <input type="text" name="text" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Does your program<br>
+                    involve any type of<br>
+                    outside activity?</b>
+                </td>
+                <td>
+                    <input type="radio" name="activity">Yes<br>
+                    <input type="radio" name="activity">No
+                </td>
+                <td>
+                    <b>State</b>
+                </td>
+                <td>
+                    <select name="members" style="width: 180px;">
+                        <option>-Select-</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <b>Country</b>
+                </td>
+                <td>
+                    <select name="members" style="width: 180px;">
+                        <option>-Select-</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Cost Per Person</b>
+                </td>
+                <td>
+                    <input type="text" name="text" size="10">USD
+                </td>
+                <td>
+                    <b>ATTACH<br>
+                    DETAILED<br>
+                    ITINERARY</b>
+                </td>
+                <td>
+                    <input type="text" name="text" size="20">
+                </td>
+            </tr>
+          </table>
+      <form class="boton" method="get" action="prueba.php">
+        <input  style="background-color: aqua" type="submit" value="Submit" />
+        <input  style="background-color: aqua" type="reset" value="Reset"/>
+        </form>
+      </div>
+  </body>
