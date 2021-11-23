@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <style>
+        table{
+            width: 400px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+            #tl{
+                vertical-align: top;
+                text-align: left;
+            }
+            #bl{
+                vertical-align: bottom;
+                text-align: left;
+            }
+            #br{
+                vertical-align: bottom;
+                text-align: right;
+            }
+            #bc{
+                vertical-align: bottom;
+                text-align: center;
+            }
+            #l{
+                text-align: left;
+            }
+            #r{
+                text-align: right;
+            }
+            #c{
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>Text</th>
+            <th>Text</th>
+            <th colspan="2">Text</th>
+            <th colspan="2">Text</th>
+        </tr>
+        <tr>
+            <td id="tl">Text</td>
+            <td id="bl">Text</td>
+            <td colspan="2" id="br">Text</td>
+            <td id="c">Text</td>
+            <td id="c">Text</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="c">Text</td>
+            <td rowspan="2" id="tl">Text</td>
+            <td id="tl">Text</td>
+            <td id="tl">Text</td>
+            <td id="c">Text</td>
+            <td id="r">Text</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="c">Text</td>
+            <td rowspan="2" id="c">Text</td>
+            <td id="c">Text</td>
+            <td id="c">Text</td>
+        </tr>
+        <tr>
+            <td id="bc">Text</td>
+            <td id="l">Text</td>
+            <td id="tl">Text</td>
+            <td id="tl">Text</td>
+        </tr>
+    </table>
+</body>
+</html>
