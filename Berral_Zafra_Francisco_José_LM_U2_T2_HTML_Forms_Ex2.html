@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex2</title>
+    <title>Forms.Ex2</title>
     <style>
         td {
             padding: 10px;
@@ -21,14 +21,29 @@
         .boton {
                 margin-left: 45%;
         }
+        input[type="file"]{
+            background: white;
+            width:132px;
+        }
+        #espacio{
+            margin-left: 35px;
+            background-color: aqua;
+            border-style: none;
+        }
+        #font{
+            font-size: 20px;
+        }
     </style>
   </head>
   <body>
       <div class="estilo"> 
           <table style="width: 875px;">
             <tr>
-                <td style="background-color: aqua;" style="text-align: left;" colspan=4>
-                    <h3>Event Planner</h3>
+                <td style="background-color: aqua;" style="text-align: left;" colspan="4" id="font">
+                    <b>Event Planner</b>
+                    <select name="actions" id="espacio" style="width: 100px;">
+                        <option>More actions</option>
+                    </select> 
             </tr>
             <tr>
                 <td>
@@ -153,7 +168,7 @@
                 <td>
                     <b>Cost Per Person</b>
                 </td>
-                <td>
+                <td style="color: lightgrey;">
                     <input type="text" name="text" size="10">USD
                 </td>
                 <td>
@@ -162,12 +177,13 @@
                     ITINERARY</b>
                 </td>
                 <td>
-                    <input type="text" name="text" size="20">
+                    <input type="text" name="text" size="8">
+                    <input type="file">
                 </td>
             </tr>
           </table>
       <form class="boton" method="get" action="prueba.php">
-        <input  style="background-color: aqua" type="submit" value="Submit" />
+        <input  style="background-color: aqua" type="submit" value="Submit"/>
         <input  style="background-color: aqua" type="reset" value="Reset"/>
         </form>
       </div>
