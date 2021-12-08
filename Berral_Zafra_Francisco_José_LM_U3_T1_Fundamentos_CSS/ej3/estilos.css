@@ -1,0 +1,43 @@
+/* This is a comment */
+/* Style Sheet for Jaberwocky Tutorial */
+
+/* Body */
+body {background-color: aqua}
+
+/* En 'Body' vamos a encontrar la definición del color de fondo. */
+
+/* Headers */
+h1 {color:maroon; font-size:20pt}
+
+/* En 'Headers' vamos a encontrar el tipo de encabezado h1, en el cual se ha definido el color 'maroon' y el tamaño de fuente a 20 puntos. */
+
+/* HR (Hard Rule = line) */
+hr {color:navy}
+
+/* En 'HR' se define el color del separador en 'navy'. */
+
+/* Paragraphs */
+p {font-size:12pt; margin-left: 15px}
+p.verse {color:maroon; margin-left: 60px}
+
+/* En 'Paragraphs' se define el tamaño de fuente del párrafo en 12 puntos, y un margen izquierdo de 15 píxeles.
+Por otro lado, se establece otro estilo para el texto versado con color 'maroon' y un margen izquierdo de 60 píxeles */
+
+/* Divs */
+
+/* Links */
+a:link     {color:green}
+a:visited  {color:yellow}
+a:hover    {color:black}
+a:active   {color:blue}
+
+/* En 'Links' vamos a encontrar los diferentes estilos de links. Se establecerá en verde por defecto, cuando se sitúe
+el cursor sobre el link, se pondrá en negro, amarillo significa que ya se ha visitado el enlace y azul cuando se pulsa. */
+
+/* Navigation */
+
+/* Classes used by all html elements */
+
+/* Ids */
+
+

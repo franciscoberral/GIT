@@ -1,0 +1,1 @@
+Los dos primeros párrafos se muestran de forma diferente debido a que tienen un estilo diferente a los cinco párrafos siguientes.
