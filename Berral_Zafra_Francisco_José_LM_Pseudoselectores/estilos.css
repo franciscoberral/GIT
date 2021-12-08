@@ -1,0 +1,33 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    width: 120px;
+}
+#table td:nth-child(1){
+    background-color: green;
+}
+#table tr:nth-child(4){
+    background-color: yellow;
+}
+a:link     {color:green}
+a:visited  {color:red}
+a{
+    text-decoration: none;
+}
+tr>:last-of-type:hover{
+    font-size:35px; 
+}
+th::first-letter{
+    font-size:35px;
+}
+.required:after{
+    content: "*";
+    color: red;
+}
+.square{
+    border: 1px solid red;
+    padding: 5px;
+    width: 200px;
+    color: grey;
+}

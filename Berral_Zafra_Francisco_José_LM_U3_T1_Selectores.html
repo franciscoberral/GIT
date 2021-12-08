@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border-style: groove;
+            border-color: black;
+            border-width: 1px;
+        }
+        th{
+            border-style: groove;
+            border-color: black;
+            border-width: 1px;
+        }
+        img{
+            height: 50px; 
+            width: 50px;
+        }
+        #center{
+            text-align: center;
+        }
+        #padding{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: yellow;
+        }
+        #text{
+            color: red;
+        }
+        #size{
+            font-size: 30px;
+            margin-left: 7px;
+        }
+        #margin{
+            margin-left: 480px;
+        }
+        .columna1{
+            background-color: red;
+            color: white;
+        }
+        .fila2{
+            font-size: 25px;
+            background-color: grey;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .background{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="center">
+        <b id="center"><u>EJERCICIO CON SELECTORES</u></b>
+    </p>
+    <table id="margin">
+        <tr>
+            <td>
+                <b id="size">Ejercicio práctico con Tablas</b>
+                <table>
+                    <tr id="center">
+                        <th></th>
+                        <td colspan="3" class="background">
+                            <img alt="MP3" src="http://clipart-library.com/newhp/214-2145198_transparent-ipod-png-ipod-clipart-png-download.png">
+                        </td>
+                        <td colspan="2" class="background">
+                            <img alt="MP3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/6G_iPod.svg/1200px-6G_iPod.svg.png">
+                        </td>
+                    </tr>
+                    <tr id="center">
+                        <th class="columna1">Capacidad</th>
+                        <td class="fila2">2GB</td>
+                        <td class="fila2">4GB</td>
+                        <td class="fila2">8GB</td>
+                        <td class="fila2">32GB</td>
+                        <td class="fila2">2GB</td>
+                    </tr>
+                    <tr>
+                        <th class="columna1">Colores</th>
+                        <td>
+                            <b>Blanco</b>
+                        </td>
+                        <td id="text">
+                            <ul>
+                                <li>
+                                    <b>Negro</b>
+                                </li>
+                                <li>
+                                    <b>Rosa</b>
+                                </li>
+                                <li>
+                                    <b>Dorado</b>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Negro</b>
+                        </td>
+                        <td colspan="2" id="text" class="background">
+                            <ul>
+                                <li>
+                                    <b>Negro</b>
+                                </li>
+                                <li>
+                                    <b>Blanco</b>
+                                </li>
+                            </ul>
+                    </td>
+                    </tr>
+                    <tr id="center">
+                        <th class="columna1">Pantalla</th>
+                        <td colspan="3" class="background">
+                            <b>3 pulgadas</b>
+                        </td>
+                        <td colspan="2" class="background">
+                            <b>7 pulgadas</b>
+                        </td>
+                    </tr>
+                    <tr id="center">
+                        <th rowspan="2" class="columna1">
+                            Tiempo<br>
+                            de carga
+                        </th>
+                        <td rowspan="2" colspan="3" class="background">
+                            <b>1 hora</b>
+                        </td>
+                        <td colspan="2" id="padding">
+                            <b>5 horas</b>
+                        </td>
+                    </tr>
+                    <tr id="center">
+                        <td colspan="2" class="background">
+                            <b>30 minutos para<br>
+                            75%</b>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
