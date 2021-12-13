@@ -1,0 +1,95 @@
+#div1{
+    background-color: olivedrab;
+    width: 1285px;
+    height: 175px;
+    margin-left: 25px;
+}
+#div2{
+    background-color: darkgreen;
+    width: 1285px;
+    height: 50px;
+    margin-left: 25px;
+}
+#div3{
+    font-size: 20px;
+    color: white;
+    padding-top: 12px;
+    margin-left: 25px;
+}
+#div4{
+    background-color: lightgrey;
+    width: 1316px;
+    height: 360px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+#div5{
+    background-color: chocolate;
+    width: 425px;
+    height: 100px;
+    padding-left: 80px;
+}
+#div6{
+    padding-top: 25px;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+#div7{
+    background-color: red;
+    text-align: center;
+    padding-top: 6px;
+    width: 180px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#div8{
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    margin-left: 70px;
+}
+#div9{
+    width: 60px;
+    height: 30px;
+    margin-left: 70px;
+}
+#p1{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+#span1{
+    font-size: 35px;
+    color: white;
+}
+#span2{
+    font-weight: 800;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+}
+.container__column {
+    flex: 1;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+.container__content {
+    flex: 1;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.container__input {
+    border-color: transparent;
+    flex: 1;
+    background-color: whitesmoke;
+    color: lightgrey;
+}
